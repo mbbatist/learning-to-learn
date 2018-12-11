@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>L2L | Learning To Learn</title>
+    <link rel="shortcut icon" href="img/light_icon_title.png" >
+
+   
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+    <link href="css/DT_bootstrap.css" rel="stylesheet" media="screen">
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+        
+    <script type="text/javascript" src="js/funcoes.js"></script>
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+
+<body id="page-top" class="index">
+
+<!--***************************************BARRA DE CIMA(MENU VERDE ESCURO)*******************************************************-->    
+    
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="pg_principal.html">  <img style="margin-top:-10px;" src="img/voltar.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul style="font-size: 10px;" class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portugues">Português</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#matematica">Matemática</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#biologia">Biologia</a>
+                    </li>
+                   <li class="page-scroll">
+                        <a href="#fisica">Física</a>
+                    </li>
+                     <li class="page-scroll">
+                        <a href="#quimica">Química</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#geografia">Geografia</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#historia">História</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#sociologia">Sociologia</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#filosofia">Filosofia</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#edfisica">Ed Física</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#artes">Artes</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#ingles">Inglês</a>
+                    </li>
+                                      
+                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+   
+    
+    
+         
+    <br><br>
+    <!--*******************************************Seção de Portugues************************************************************-->
+    <section id="portugues">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Português</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+        <br><br><br>
+        <!--TABELA BIMESTRAL-->
+      <div style="float:left;">
+        <table class="table-striped" style="margin-left:200px;width: 300px;height: 100px;">
+            <tr>
+                <td colspan="2"><center><img src="img/nota.png" width="30" height="30"> <b>Bimestre</b></center></td>
+            </tr>
+             <tr>
+                <td>Nota:</td>
+                <td id="nota"><center><input type="number" min="0" max="10"></center></td>
+            </tr>
+             <tr>
+                  <td>Qual Bimestre:</td>
+                <td><select name="bimport">
+                        <option value="port1">1º Bimestre</option><!--Esses valores de cada bimestre devem aparecer na segunda tabela-->
+                        <option value="port2">2º Bimestre</option>
+                        <option value="port3">3º Bimestre</option>
+                        <option value="port4">4º Bimestre</option>
+                        </select></td>
+            </tr>
+             <tr>
+                 <td>Nota mínima pra<br> o próximo Bimestre:</td>
+                 <td id="Nmin">&nbsp;</td><!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+             <tr>
+                <td>Quanto falta para<br> passar de ano:</td>
+                <td id="falta">&nbsp;</td>  <!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+        </table>
+        <a style="margin-top: 10px;margin-left: 250px;" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-th"></span> Calcular</a>
+        <a style="margin-top: 10px;margin-left: 10px;" href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Salvar</a>
+        <!--Após apertar Salvar o numero inserido em nota deve ir para a outra tabela para o bimestre escolhido ONDE CADA UM TEM SUA ID-->
+      </div>
+        
+        <!--2º GRAFICO: DE APROVEITAMENTO-->
+        
+         <table class="table-striped" style="height:200px;width:40%;float:right;margin-right: 150px;">
+            <tr>
+                <td colspan="5"><center><b>Nota e Aproveitamento</b></center></td>
+                
+            </tr>
+            <tr>
+                <td><center><img src="img/medal-512.png" width="30" height="30"></center></td>
+                <td><b>1º</b> Bimestre</td>
+                <td><b>2º</b> Bimestre</td>
+                <td><b>3º</b> Bimestre</td>
+                <td><b>4º</b> Bimestre</td>
+            </tr>
+            <tr>
+                <td><center><b>Notas</b></center></td>
+                <td id="portN1"><ul></ul></td><!---->
+                <td id="portN2"><ul></ul></td>
+                <td id="portN3"><ul></ul></td>
+                <td id="portN4"><ul></ul></td>
+            </tr> 
+            <tr>
+                <td><center><b>Aproveitamento</b></center></td>
+                <td colspan="4" id="portpor100"><center></center></td>
+                <!--Nessa coluna deve conter em porcentagem o aproveitamento
+                    Vai ser tipo assim:
+                    -Se só tiver a nota do 1º bimestre,vai ser:
+                       n1*100/10
+                     -Se tiver a nota do 1º e 2º bimestre,vai ser:
+                       (n1+n2)*100/20
+                     -Se tiver a nota do 1º,2º e 3º bimestre,vai ser:
+                       (n1+n2+n3)*100/30
+                     -Se tiver a nota do 1º,2º,3º e 4º bimestre,vai ser:
+                       (n1+n2+n3+n4)*100/40
+                -->                
+            </tr>
+            <tr>
+                <td><center><b>Situação</b></center></td>
+                <td colspan="4" id="sitport"><center></center></td>
+                <!--Aqui o usuario tem três caminhos:-reprovado(se todas as notas estiverem completas 
+                e tiver - que 24 pontos);-aprovado(se já tiver 24 pontos) ou Não aprovado ainda(se tiver nota incompleta)-->
+            </tr>
+        </table>   
+        <br><br><br><br>
+    </section>
+    
+    <section id="matematica">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Matemática</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+           <br><br><br>
+        <!--TABELA BIMESTRAL-->
+      <div style="float:left;">
+        <table class="table-striped" style="margin-left:200px;width: 300px;height: 100px;">
+            <tr>
+                <td colspan="2"><center><img src="img/nota.png" width="30" height="30"> <b>Bimestre</b></center></td>
+            </tr>
+             <tr>
+                <td>Nota:</td>
+                <td id="nota"><center><input type="number" min="0" max="10"></center></td>
+            </tr>
+             <tr>
+                  <td>Qual Bimestre:</td>
+                <td><select name="bimmat">
+                        <option value="mat1">1º Bimestre</option><!--Esses valores de cada bimestre devem aparecer na segunda tabela-->
+                        <option value="mat2">2º Bimestre</option>
+                        <option value="mat3">3º Bimestre</option>
+                        <option value="mat4">4º Bimestre</option>
+                        </select></td>
+            </tr>
+             <tr>
+                 <td>Nota mínima pra<br> o próximo Bimestre:</td>
+                 <td id="Nmin">&nbsp;</td><!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+             <tr>
+                <td>Quanto falta para<br> passar de ano:</td>
+                <td id="falta">&nbsp;</td>  <!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+        </table>
+        <a style="margin-top: 10px;margin-left: 250px;" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-th"></span> Calcular</a>
+        <a style="margin-top: 10px;margin-left: 10px;" href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Salvar</a>
+        <!--Após apertar Salvar o numero inserido em nota deve ir para a outra tabela para o bimestre escolhido ONDE CADA UM TEM SUA ID-->
+      </div>
+        
+        <!--2º GRAFICO: DE APROVEITAMENTO-->
+        
+         <table class="table-striped" style="height:200px;width:40%;float:right;margin-right: 150px;">
+            <tr>
+                <td colspan="5"><center><b>Nota e Aproveitamento</b></center></td>
+                
+            </tr>
+            <tr>
+                <td><center><img src="img/medal-512.png" width="30" height="30"></center></td>
+                <td><b>1º</b> Bimestre</td>
+                <td><b>2º</b> Bimestre</td>
+                <td><b>3º</b> Bimestre</td>
+                <td><b>4º</b> Bimestre</td>
+            </tr>
+            <tr>
+                <td><center><b>Notas</b></center></td>
+                <td id="matN1"><ul></ul></td><!---->
+                <td id="matN2"><ul></ul></td>
+                <td id="matN3"><ul></ul></td>
+                <td id="matN4"><ul></ul></td>
+            </tr>
+            <tr>
+                <td><center><b>Aproveitamento</b></center></td>
+                <td colspan="4" id="matpor100"><center></center></td>
+                <!--Nessa coluna deve conter em porcentagem o aproveitamento
+                    Vai ser tipo assim:
+                    -Se só tiver a nota do 1º bimestre,vai ser:
+                       n1*100/10
+                     -Se tiver a nota do 1º e 2º bimestre,vai ser:
+                       (n1+n2)*100/20
+                     -Se tiver a nota do 1º,2º e 3º bimestre,vai ser:
+                       (n1+n2+n3)*100/30
+                     -Se tiver a nota do 1º,2º,3º e 4º bimestre,vai ser:
+                       (n1+n2+n3+n4)*100/40
+                -->             
+            </tr>
+            <tr>
+                <td><center><b>Situação</b></center></td>
+         <td colspan="4" id="sitmat"><center></center></td>
+         <!--Aqui o usuario tem três caminhos:-reprovado(se todas as notas estiverem completas 
+                e tiver - que 24 pontos);-aprovado(se já tiver 24 pontos) ou Não aprovado ainda(se tiver nota incompleta)-->
+            </tr>
+        </table>   
+        <br><br><br><br>
+    </section>
+    
+    <section id="biologia">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Biologia</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+         <br><br><br>
+        <!--TABELA BIMESTRAL-->
+      <div style="float:left;">
+        <table class="table-striped" style="margin-left:200px;width: 300px;height: 100px;">
+            <tr>
+                <td colspan="2"><center><img src="img/nota.png" width="30" height="30"> <b>Bimestre</b></center></td>
+            </tr>
+             <tr>
+                <td>Nota:</td>
+                <td id="nota"><center><input type="number" min="0" max="10"></center></td>
+            </tr>
+             <tr>
+                  <td>Qual Bimestre:</td>
+                <td><select name="bimbio">
+                        <option value="bio1">1º Bimestre</option><!--Esses valores de cada bimestre devem aparecer na segunda tabela-->
+                        <option value="bio2">2º Bimestre</option>
+                        <option value="bio3">3º Bimestre</option>
+                        <option value="bio4">4º Bimestre</option>
+                        </select></td>
+            </tr>
+             <tr>
+                 <td>Nota mínima pra<br> o próximo Bimestre:</td>
+                 <td id="Nmin">&nbsp;</td><!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+             <tr>
+                <td>Quanto falta para<br> passar de ano:</td>
+                <td id="falta">&nbsp;</td>  <!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+        </table>
+        <a style="margin-top: 10px;margin-left: 250px;" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-th"></span> Calcular</a>
+        <a style="margin-top: 10px;margin-left: 10px;" href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Salvar</a>
+        <!--Após apertar Salvar o numero inserido em nota deve ir para a outra tabela para o bimestre escolhido ONDE CADA UM TEM SUA ID-->
+      </div>
+        
+        <!--2º GRAFICO: DE APROVEITAMENTO-->
+        
+         <table class="table-striped" style="height:200px;width:40%;float:right;margin-right: 150px;">
+            <tr>
+                <td colspan="5"><center><b>Nota e Aproveitamento</b></center></td>
+                
+            </tr>
+            <tr>
+                <td><center><img src="img/medal-512.png" width="30" height="30"></center></td>
+                <td><b>1º</b> Bimestre</td>
+                <td><b>2º</b> Bimestre</td>
+                <td><b>3º</b> Bimestre</td>
+                <td><b>4º</b> Bimestre</td>
+            </tr>
+            <tr>
+                <td><center><b>Notas</b></center></td>
+                <td id="bioN1"><ul></ul></td><!---->
+                <td id="bioN2"><ul></ul></td>
+                <td id="bioN3"><ul></ul></td>
+                <td id="bioN4"><ul></ul></td>
+            </tr>
+            <tr>
+                <td><center><b>Aproveitamento</b></center></td>
+                <td colspan="4" id="biopor100"><center></center></td>
+                <!--Nessa coluna deve conter em porcentagem o aproveitamento
+                    Vai ser tipo assim:
+                    -Se só tiver a nota do 1º bimestre,vai ser:
+                       n1*100/10
+                     -Se tiver a nota do 1º e 2º bimestre,vai ser:
+                       (n1+n2)*100/20
+                     -Se tiver a nota do 1º,2º e 3º bimestre,vai ser:
+                       (n1+n2+n3)*100/30
+                     -Se tiver a nota do 1º,2º,3º e 4º bimestre,vai ser:
+                       (n1+n2+n3+n4)*100/40
+                -->       
+            </tr>
+            <tr>
+                <td><center><b>Situação</b></center></td>
+                <td colspan="4" id="sitbio"><center></center></td>
+                <!--Aqui o usuario tem três caminhos:-reprovado(se todas as notas estiverem completas 
+                e tiver - que 24 pontos);-aprovado(se já tiver 24 pontos) ou Não aprovado ainda(se tiver nota incompleta)-->
+            </tr>
+        </table>   
+        <br><br><br><br>
+    </section>
+    
+    <section id="fisica">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Física</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+         <br><br><br>
+        <!--TABELA BIMESTRAL-->
+      <div style="float:left;">
+        <table class="table-striped" style="margin-left:200px;width: 300px;height: 100px;">
+            <tr>
+                <td colspan="2"><center><img src="img/nota.png" width="30" height="30"> <b>Bimestre</b></center></td>
+            </tr>
+             <tr>
+                <td>Nota:</td>
+                <td id="nota"><center><input type="number" min="0" max="10"></center></td>
+            </tr>
+             <tr>
+                  <td>Qual Bimestre:</td>
+                <td><select name="bimfis">
+                        <option value="fis1">1º Bimestre</option><!--Esses valores de cada bimestre devem aparecer na segunda tabela-->
+                        <option value="fis2">2º Bimestre</option>
+                        <option value="fis3">3º Bimestre</option>
+                        <option value="fis4">4º Bimestre</option>
+                        </select></td>
+            </tr>
+             <tr>
+                 <td>Nota mínima pra<br> o próximo Bimestre:</td>
+                 <td id="Nmin">&nbsp;</td><!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+             <tr>
+                <td>Quanto falta para<br> passar de ano:</td>
+                <td id="falta">&nbsp;</td>  <!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+        </table>
+        <a style="margin-top: 10px;margin-left: 250px;" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-th"></span> Calcular</a>
+        <a style="margin-top: 10px;margin-left: 10px;" href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Salvar</a>
+        <!--Após apertar Salvar o numero inserido em nota deve ir para a outra tabela para o bimestre escolhido ONDE CADA UM TEM SUA ID-->
+      </div>
+        
+        <!--2º GRAFICO: DE APROVEITAMENTO-->
+        
+         <table class="table-striped" style="height:200px;width:40%;float:right;margin-right: 150px;">
+            <tr>
+                <td colspan="5"><center><b>Nota e Aproveitamento</b></center></td>
+                
+            </tr>
+            <tr>
+                <td><center><img src="img/medal-512.png" width="30" height="30"></center></td>
+                <td><b>1º</b> Bimestre</td>
+                <td><b>2º</b> Bimestre</td>
+                <td><b>3º</b> Bimestre</td>
+                <td><b>4º</b> Bimestre</td>
+            </tr>
+            <tr>
+                <td><center><b>Notas</b></center></td>
+                <td id="fisN1"><ul></ul></td><!---->
+                <td id="fisN2"><ul></ul></td>
+                <td id="fisN3"><ul></ul></td>
+                <td id="fisN4"><ul></ul></td>
+            </tr>
+            <tr>
+                <td><center><b>Aproveitamento</b></center></td>
+                <td colspan="4" id="fispor100"><center></center></td>
+                <!--Nessa coluna deve conter em porcentagem o aproveitamento
+                    Vai ser tipo assim:
+                    -Se só tiver a nota do 1º bimestre,vai ser:
+                       n1*100/10
+                     -Se tiver a nota do 1º e 2º bimestre,vai ser:
+                       (n1+n2)*100/20
+                     -Se tiver a nota do 1º,2º e 3º bimestre,vai ser:
+                       (n1+n2+n3)*100/30
+                     -Se tiver a nota do 1º,2º,3º e 4º bimestre,vai ser:
+                       (n1+n2+n3+n4)*100/40
+                -->       
+            </tr>
+            <tr>
+                <td><center><b>Situação</b></center></td>
+                <td colspan="4" id="sitfis"><center></center></td>
+               <!--Aqui o usuario tem três caminhos:-reprovado(se todas as notas estiverem completas 
+                e tiver - que 24 pontos);-aprovado(se já tiver 24 pontos) ou Não aprovado ainda(se tiver nota incompleta)-->
+            </tr>
+        </table>   
+        <br><br><br><br>
+    </section>
+    
+    <section id="quimica">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Química</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+         <br><br><br>
+        <!--TABELA BIMESTRAL-->
+      <div style="float:left;">
+        <table class="table-striped" style="margin-left:200px;width: 300px;height: 100px;">
+            <tr>
+                <td colspan="2"><center><img src="img/nota.png" width="30" height="30"> <b>Bimestre</b></center></td>
+            </tr>
+             <tr>
+                <td>Nota:</td>
+                <td id="nota"><center><input type="number" min="0" max="10"></center></td>
+            </tr>
+             <tr>
+                  <td>Qual Bimestre:</td>
+                <td><select name="bimqui">
+                        <option value="qui1">1º Bimestre</option><!--Esses valores de cada bimestre devem aparecer na segunda tabela-->
+                        <option value="qui2">2º Bimestre</option>
+                        <option value="qui3">3º Bimestre</option>
+                        <option value="qui4">4º Bimestre</option>
+                        </select></td>
+            </tr>
+             <tr>
+                 <td>Nota mínima pra<br> o próximo Bimestre:</td>
+                 <td id="Nmin">&nbsp;</td><!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+             <tr>
+                <td>Quanto falta para<br> passar de ano:</td>
+                <td id="falta">&nbsp;</td>  <!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+        </table>
+        <a style="margin-top: 10px;margin-left: 250px;" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-th"></span> Calcular</a>
+        <a style="margin-top: 10px;margin-left: 10px;" href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Salvar</a>
+        <!--Após apertar Salvar o numero inserido em nota deve ir para a outra tabela para o bimestre escolhido ONDE CADA UM TEM SUA ID-->
+      </div>
+        
+        <!--2º GRAFICO: DE APROVEITAMENTO-->
+        
+         <table class="table-striped" style="height:200px;width:40%;float:right;margin-right: 150px;">
+            <tr>
+                <td colspan="5"><center><b>Nota e Aproveitamento</b></center></td>
+                
+            </tr>
+            <tr>
+                <td><center><img src="img/medal-512.png" width="30" height="30"></center></td>
+                <td><b>1º</b> Bimestre</td>
+                <td><b>2º</b> Bimestre</td>
+                <td><b>3º</b> Bimestre</td>
+                <td><b>4º</b> Bimestre</td>
+            </tr>
+            <tr>
+                <td><center><b>Notas</b></center></td>
+                <td id="quiN1"><ul></ul></td><!---->
+                <td id="quiN2"><ul></ul></td>
+                <td id="quiN3"><ul></ul></td>
+                <td id="quiN4"><ul></ul></td>
+            </tr>
+            <tr>
+                <td><center><b>Aproveitamento</b></center></td>
+                <td colspan="4" id="quipor100"><center></center></td>
+                <!--Nessa coluna deve conter em porcentagem o aproveitamento
+                    Vai ser tipo assim:
+                    -Se só tiver a nota do 1º bimestre,vai ser:
+                       n1*100/10
+                     -Se tiver a nota do 1º e 2º bimestre,vai ser:
+                       (n1+n2)*100/20
+                     -Se tiver a nota do 1º,2º e 3º bimestre,vai ser:
+                       (n1+n2+n3)*100/30
+                     -Se tiver a nota do 1º,2º,3º e 4º bimestre,vai ser:
+                       (n1+n2+n3+n4)*100/40
+                -->       
+            </tr>
+            <tr>
+                <td><center><b>Situação</b></center></td>
+                <td colspan="4" id="sitqui"><center></center></td>
+                <!--Aqui o usuario tem três caminhos:-reprovado(se todas as notas estiverem completas 
+                e tiver - que 24 pontos);-aprovado(se já tiver 24 pontos) ou Não aprovado ainda(se tiver nota incompleta)-->
+            </tr>
+        </table>   
+        <br><br><br><br>
+       
+    </section>
+    
+    <section id="geografia">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Geografia</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+         <br><br><br>
+        <!--TABELA BIMESTRAL-->
+      <div style="float:left;">
+        <table class="table-striped" style="margin-left:200px;width: 300px;height: 100px;">
+            <tr>
+                <td colspan="2"><center><img src="img/nota.png" width="30" height="30"> <b>Bimestre</b></center></td>
+            </tr>
+             <tr>
+                <td>Nota:</td>
+                <td id="nota"><center><input type="number" min="0" max="10"></center></td>
+            </tr>
+             <tr>
+                  <td>Qual Bimestre:</td>
+                <td><select name="bimgeo">
+                        <option value="geo1">1º Bimestre</option><!--Esses valores de cada bimestre devem aparecer na segunda tabela-->
+                        <option value="geo2">2º Bimestre</option>
+                        <option value="geo3">3º Bimestre</option>
+                        <option value="geo4">4º Bimestre</option>
+                        </select></td>
+            </tr>
+             <tr>
+                 <td>Nota mínima pra<br> o próximo Bimestre:</td>
+                 <td id="Nmin">&nbsp;</td><!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+             <tr>
+                <td>Quanto falta para<br> passar de ano:</td>
+                <td id="falta">&nbsp;</td>  <!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+        </table>
+        <a style="margin-top: 10px;margin-left: 250px;" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-th"></span> Calcular</a>
+        <a style="margin-top: 10px;margin-left: 10px;" href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Salvar</a>
+        <!--Após apertar Salvar o numero inserido em nota deve ir para a outra tabela para o bimestre escolhido ONDE CADA UM TEM SUA ID-->
+      </div>
+        
+        <!--2º GRAFICO: DE APROVEITAMENTO-->
+        
+         <table class="table-striped" style="height:200px;width:40%;float:right;margin-right: 150px;">
+            <tr>
+                <td colspan="5"><center><b>Nota e Aproveitamento</b></center></td>
+                
+            </tr>
+            <tr>
+                <td><center><img src="img/medal-512.png" width="30" height="30"></center></td>
+                <td><b>1º</b> Bimestre</td>
+                <td><b>2º</b> Bimestre</td>
+                <td><b>3º</b> Bimestre</td>
+                <td><b>4º</b> Bimestre</td>
+            </tr>
+            <tr>
+                <td><center><b>Notas</b></center></td>
+                <td id="geoN1"><ul></ul></td><!---->
+                <td id="geoN2"><ul></ul></td>
+                <td id="geoN3"><ul></ul></td>
+                <td id="geoN4"><ul></ul></td>
+            </tr>
+            <tr>
+                <td><center><b>Aproveitamento</b></center></td>
+                <td colspan="4" id="geopor100"><center></center></td>
+                <!--Nessa coluna deve conter em porcentagem o aproveitamento
+                    Vai ser tipo assim:
+                    -Se só tiver a nota do 1º bimestre,vai ser:
+                       n1*100/10
+                     -Se tiver a nota do 1º e 2º bimestre,vai ser:
+                       (n1+n2)*100/20
+                     -Se tiver a nota do 1º,2º e 3º bimestre,vai ser:
+                       (n1+n2+n3)*100/30
+                     -Se tiver a nota do 1º,2º,3º e 4º bimestre,vai ser:
+                       (n1+n2+n3+n4)*100/40
+                -->       
+            </tr>
+            <tr>
+                <td><center><b>Situação</b></center></td>
+                <td colspan="4" id="sitgeo"><center></center></td>
+                <!--Aqui o usuario tem três caminhos:-reprovado(se todas as notas estiverem completas 
+                e tiver - que 24 pontos);-aprovado(se já tiver 24 pontos) ou Não aprovado ainda(se tiver nota incompleta)-->
+            </tr>
+        </table>   
+        <br><br><br><br>
+    </section>
+    <section id="historia">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>História</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+         <br><br><br>
+        <!--TABELA BIMESTRAL-->
+      <div style="float:left;">
+        <table class="table-striped" style="margin-left:200px;width: 300px;height: 100px;">
+            <tr>
+                <td colspan="2"><center><img src="img/nota.png" width="30" height="30"> <b>Bimestre</b></center></td>
+            </tr>
+             <tr>
+                <td>Nota:</td>
+                <td id="nota"><center><input type="number" min="0" max="10"></center></td>
+            </tr>
+             <tr>
+                  <td>Qual Bimestre:</td>
+                <td><select name="bimhist">
+                        <option value="hist1">1º Bimestre</option><!--Esses valores de cada bimestre devem aparecer na segunda tabela-->
+                        <option value="hist2">2º Bimestre</option>
+                        <option value="hist3">3º Bimestre</option>
+                        <option value="hist4">4º Bimestre</option>
+                        </select></td>
+            </tr>
+             <tr>
+                 <td>Nota mínima pra<br> o próximo Bimestre:</td>
+                 <td id="Nmin">&nbsp;</td><!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+             <tr>
+                <td>Quanto falta para<br> passar de ano:</td>
+                <td id="falta">&nbsp;</td>  <!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+        </table>
+        <a style="margin-top: 10px;margin-left: 250px;" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-th"></span> Calcular</a>
+        <a style="margin-top: 10px;margin-left: 10px;" href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Salvar</a>
+        <!--Após apertar Salvar o numero inserido em nota deve ir para a outra tabela para o bimestre escolhido ONDE CADA UM TEM SUA ID-->
+      </div>
+        
+        <!--2º GRAFICO: DE APROVEITAMENTO-->
+        
+         <table class="table-striped" style="height:200px;width:40%;float:right;margin-right: 150px;">
+            <tr>
+                <td colspan="5"><center><b>Nota e Aproveitamento</b></center></td>
+                
+            </tr>
+            <tr>
+                <td><center><img src="img/medal-512.png" width="30" height="30"></center></td>
+                <td><b>1º</b> Bimestre</td>
+                <td><b>2º</b> Bimestre</td>
+                <td><b>3º</b> Bimestre</td>
+                <td><b>4º</b> Bimestre</td>
+            </tr>
+            <tr>
+                <td><center><b>Notas</b></center></td>
+                <td id="histN1"><ul></ul></td><!---->
+                <td id="histN2"><ul></ul></td>
+                <td id="histN3"><ul></ul></td>
+                <td id="histN4"><ul></ul></td>
+            </tr>
+            <tr>
+                <td><center><b>Aproveitamento</b></center></td>
+                <td colspan="4" id="histpor100"><center></center></td>
+                <!--Nessa coluna deve conter em porcentagem o aproveitamento
+                    Vai ser tipo assim:
+                    -Se só tiver a nota do 1º bimestre,vai ser:
+                       n1*100/10
+                     -Se tiver a nota do 1º e 2º bimestre,vai ser:
+                       (n1+n2)*100/20
+                     -Se tiver a nota do 1º,2º e 3º bimestre,vai ser:
+                       (n1+n2+n3)*100/30
+                     -Se tiver a nota do 1º,2º,3º e 4º bimestre,vai ser:
+                       (n1+n2+n3+n4)*100/40
+                -->       
+            </tr>
+            <tr>
+                <td><center><b>Situação</b></center></td>
+                <td colspan="4" id="sithist"><center></center></td>
+                <!--Aqui o usuario tem três caminhos:-reprovado(se todas as notas estiverem completas 
+                e tiver - que 24 pontos);-aprovado(se já tiver 24 pontos) ou Não aprovado ainda(se tiver nota incompleta)-->
+            </tr>
+        </table>   
+        <br><br><br><br>
+    </section>
+    
+    <section id="sociologia">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Sociologia</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+         <br><br><br>
+        <!--TABELA BIMESTRAL-->
+      <div style="float:left;">
+        <table class="table-striped" style="margin-left:200px;width: 300px;height: 100px;">
+            <tr>
+                <td colspan="2"><center><img src="img/nota.png" width="30" height="30"> <b>Bimestre</b></center></td>
+            </tr>
+             <tr>
+                <td>Nota:</td>
+                <td id="nota"><center><input type="number" min="0" max="10"></center></td>
+            </tr>
+             <tr>
+                  <td>Qual Bimestre:</td>
+                <td><select name="bimsocio">
+                        <option value="socio1">1º Bimestre</option><!--Esses valores de cada bimestre devem aparecer na segunda tabela-->
+                        <option value="socio2">2º Bimestre</option>
+                        <option value="socio3">3º Bimestre</option>
+                        <option value="socio4">4º Bimestre</option>
+                        </select></td>
+            </tr>
+             <tr>
+                 <td>Nota mínima pra<br> o próximo Bimestre:</td>
+                 <td id="Nmin">&nbsp;</td><!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+             <tr>
+                <td>Quanto falta para<br> passar de ano:</td>
+                <td id="falta">&nbsp;</td>  <!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+        </table>
+        <a style="margin-top: 10px;margin-left: 250px;" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-th"></span> Calcular</a>
+        <a style="margin-top: 10px;margin-left: 10px;" href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Salvar</a>
+        <!--Após apertar Salvar o numero inserido em nota deve ir para a outra tabela para o bimestre escolhido ONDE CADA UM TEM SUA ID-->
+      </div>
+        
+        <!--2º GRAFICO: DE APROVEITAMENTO-->
+        
+         <table class="table-striped" style="height:200px;width:40%;float:right;margin-right: 150px;">
+            <tr>
+                <td colspan="5"><center><b>Nota e Aproveitamento</b></center></td>
+                
+            </tr>
+            <tr>
+                <td><center><img src="img/medal-512.png" width="30" height="30"></center></td>
+                <td><b>1º</b> Bimestre</td>
+                <td><b>2º</b> Bimestre</td>
+                <td><b>3º</b> Bimestre</td>
+                <td><b>4º</b> Bimestre</td>
+            </tr>
+            <tr>
+                <td><center><b>Notas</b></center></td>
+                <td id="socioN1"><ul></ul></td><!---->
+                <td id="socioN2"><ul></ul></td>
+                <td id="socioN3"><ul></ul></td>
+                <td id="socioN4"><ul></ul></td>
+            </tr>
+            <tr>
+                <td><center><b>Aproveitamento</b></center></td>
+                <td colspan="4" id="sociopor100"><center></center></td>
+                <!--Nessa coluna deve conter em porcentagem o aproveitamento
+                    Vai ser tipo assim:
+                    -Se só tiver a nota do 1º bimestre,vai ser:
+                       n1*100/10
+                     -Se tiver a nota do 1º e 2º bimestre,vai ser:
+                       (n1+n2)*100/20
+                     -Se tiver a nota do 1º,2º e 3º bimestre,vai ser:
+                       (n1+n2+n3)*100/30
+                     -Se tiver a nota do 1º,2º,3º e 4º bimestre,vai ser:
+                       (n1+n2+n3+n4)*100/40
+                -->       
+            </tr>
+            <tr>
+                <td><center><b>Situação</b></center></td>
+                <td colspan="4" id="sitsocio"><center></center></td>
+                <!--Aqui o usuario tem três caminhos:-reprovado(se todas as notas estiverem completas 
+                e tiver - que 24 pontos);-aprovado(se já tiver 24 pontos) ou Não aprovado ainda(se tiver nota incompleta)-->
+            </tr>
+        </table>   
+        <br><br><br><br>
+    </section>
+    
+    <section id="filosofia">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Filosofia</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+         <br><br><br>
+        <!--TABELA BIMESTRAL-->
+      <div style="float:left;">
+        <table class="table-striped" style="margin-left:200px;width: 300px;height: 100px;">
+            <tr>
+                <td colspan="2"><center><img src="img/nota.png" width="30" height="30"> <b>Bimestre</b></center></td>
+            </tr>
+             <tr>
+                <td>Nota:</td>
+                <td id="nota"><center><input type="number" min="0" max="10"></center></td>
+            </tr>
+             <tr>
+                  <td>Qual Bimestre:</td>
+                <td><select name="bimfilos">
+                        <option value="filos1">1º Bimestre</option><!--Esses valores de cada bimestre devem aparecer na segunda tabela-->
+                        <option value="filos2">2º Bimestre</option>
+                        <option value="filos3">3º Bimestre</option>
+                        <option value="filos4">4º Bimestre</option>
+                        </select></td>
+            </tr>
+             <tr>
+                 <td>Nota mínima pra<br> o próximo Bimestre:</td>
+                 <td id="Nmin">&nbsp;</td><!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+             <tr>
+                <td>Quanto falta para<br> passar de ano:</td>
+                <td id="falta">&nbsp;</td>  <!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+        </table>
+        <a style="margin-top: 10px;margin-left: 250px;" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-th"></span> Calcular</a>
+        <a style="margin-top: 10px;margin-left: 10px;" href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Salvar</a>
+        <!--Após apertar Salvar o numero inserido em nota deve ir para a outra tabela para o bimestre escolhido ONDE CADA UM TEM SUA ID-->
+      </div>
+        
+        <!--2º GRAFICO: DE APROVEITAMENTO-->
+        
+         <table class="table-striped" style="height:200px;width:40%;float:right;margin-right: 150px;">
+            <tr>
+                <td colspan="5"><center><b>Nota e Aproveitamento</b></center></td>
+                
+            </tr>
+            <tr>
+                <td><center><img src="img/medal-512.png" width="30" height="30"></center></td>
+                <td><b>1º</b> Bimestre</td>
+                <td><b>2º</b> Bimestre</td>
+                <td><b>3º</b> Bimestre</td>
+                <td><b>4º</b> Bimestre</td>
+            </tr>
+            <tr>
+                <td><center><b>Notas</b></center></td>
+                <td id="filosN1"><ul></ul></td><!---->
+                <td id="filosN2"><ul></ul></td>
+                <td id="filosN3"><ul></ul></td>
+                <td id="filosN4"><ul></ul></td>
+            </tr>
+            <tr>
+                <td><center><b>Aproveitamento</b></center></td>
+                <td colspan="4" id="filospor100"><center></center></td>
+                <!--Nessa coluna deve conter em porcentagem o aproveitamento
+                    Vai ser tipo assim:
+                    -Se só tiver a nota do 1º bimestre,vai ser:
+                       n1*100/10
+                     -Se tiver a nota do 1º e 2º bimestre,vai ser:
+                       (n1+n2)*100/20
+                     -Se tiver a nota do 1º,2º e 3º bimestre,vai ser:
+                       (n1+n2+n3)*100/30
+                     -Se tiver a nota do 1º,2º,3º e 4º bimestre,vai ser:
+                       (n1+n2+n3+n4)*100/40
+                -->       
+            </tr>
+            <tr>
+                <td><center><b>Situação</b></center></td>
+                <td colspan="4" id="sitfilos"><center></center></td>
+                <!--Aqui o usuario tem três caminhos:-reprovado(se todas as notas estiverem completas 
+                e tiver - que 24 pontos);-aprovado(se já tiver 24 pontos) ou Não aprovado ainda(se tiver nota incompleta)-->
+            </tr>
+        </table>   
+        <br><br><br><br>
+    </section>
+    
+    <section id="edfisica">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Educação Física</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+        <br><br><br>
+        <!--TABELA BIMESTRAL-->
+      <div style="float:left;">
+        <table class="table-striped" style="margin-left:200px;width: 300px;height: 100px;">
+            <tr>
+                <td colspan="2"><center><img src="img/nota.png" width="30" height="30"> <b>Bimestre</b></center></td>
+            </tr>
+             <tr>
+                <td>Nota:</td>
+                <td id="nota"><center><input type="number" min="0" max="10"></center></td>
+            </tr>
+             <tr>
+                  <td>Qual Bimestre:</td>
+                <td><select name="bimedfis">
+                        <option value="edfis1">1º Bimestre</option><!--Esses valores de cada bimestre devem aparecer na segunda tabela-->
+                        <option value="edfis2">2º Bimestre</option>
+                        <option value="edfis3">3º Bimestre</option>
+                        <option value="edfis4">4º Bimestre</option>
+                        </select></td>
+            </tr>
+             <tr>
+                 <td>Nota mínima pra<br> o próximo Bimestre:</td>
+                 <td id="Nmin">&nbsp;</td><!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+             <tr>
+                <td>Quanto falta para<br> passar de ano:</td>
+                <td id="falta">&nbsp;</td>  <!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+        </table>
+        <a style="margin-top: 10px;margin-left: 250px;" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-th"></span> Calcular</a>
+        <a style="margin-top: 10px;margin-left: 10px;" href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Salvar</a>
+        <!--Após apertar Salvar o numero inserido em nota deve ir para a outra tabela para o bimestre escolhido ONDE CADA UM TEM SUA ID-->
+      </div>
+        
+        <!--2º GRAFICO: DE APROVEITAMENTO-->
+        
+         <table class="table-striped" style="height:200px;width:40%;float:right;margin-right: 150px;">
+            <tr>
+                <td colspan="5"><center><b>Nota e Aproveitamento</b></center></td>
+                
+            </tr>
+            <tr>
+                <td><center><img src="img/medal-512.png" width="30" height="30"></center></td>
+                <td><b>1º</b> Bimestre</td>
+                <td><b>2º</b> Bimestre</td>
+                <td><b>3º</b> Bimestre</td>
+                <td><b>4º</b> Bimestre</td>
+            </tr>
+            <tr>
+                <td><center><b>Notas</b></center></td>
+                <td id="edfisN1"><ul></ul></td><!---->
+                <td id="edfisN2"><ul></ul></td>
+                <td id="edfisN3"><ul></ul></td>
+                <td id="edfisN4"><ul></ul></td>
+            </tr>
+            <tr>
+                <td><center><b>Aproveitamento</b></center></td>
+                <td colspan="4" id="edfispor100"><center></center></td>
+                <!--Nessa coluna deve conter em porcentagem o aproveitamento
+                    Vai ser tipo assim:
+                    -Se só tiver a nota do 1º bimestre,vai ser:
+                       n1*100/10
+                     -Se tiver a nota do 1º e 2º bimestre,vai ser:
+                       (n1+n2)*100/20
+                     -Se tiver a nota do 1º,2º e 3º bimestre,vai ser:
+                       (n1+n2+n3)*100/30
+                     -Se tiver a nota do 1º,2º,3º e 4º bimestre,vai ser:
+                       (n1+n2+n3+n4)*100/40
+                -->       
+            </tr>
+            <tr>
+                <td><center><b>Situação</b></center></td>
+                <td colspan="4" id="sitedfis"><center></center></td>
+                <!--Aqui o usuario tem três caminhos:-reprovado(se todas as notas estiverem completas 
+                e tiver - que 24 pontos);-aprovado(se já tiver 24 pontos) ou Não aprovado ainda(se tiver nota incompleta)-->
+            </tr>
+        </table>   
+        <br><br><br><br>
+    </section>
+    
+    <section id="artes">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Artes</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+         <br><br><br>
+        <!--TABELA BIMESTRAL-->
+      <div style="float:left;">
+        <table class="table-striped" style="margin-left:200px;width: 300px;height: 100px;">
+            <tr>
+                <td colspan="2"><center><img src="img/nota.png" width="30" height="30"> <b>Bimestre</b></center></td>
+            </tr>
+             <tr>
+                <td>Nota:</td>
+                <td id="nota"><center><input type="number" min="0" max="10"></center></td>
+            </tr>
+             <tr>
+                  <td>Qual Bimestre:</td>
+                <td><select name="bimart">
+                        <option value="art1">1º Bimestre</option><!--Esses valores de cada bimestre devem aparecer na segunda tabela-->
+                        <option value="art2">2º Bimestre</option>
+                        <option value="art3">3º Bimestre</option>
+                        <option value="art4">4º Bimestre</option>
+                        </select></td>
+            </tr>
+             <tr>
+                 <td>Nota mínima pra<br> o próximo Bimestre:</td>
+                 <td id="Nmin">&nbsp;</td><!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+             <tr>
+                <td>Quanto falta para<br> passar de ano:</td>
+                <td id="falta">&nbsp;</td>  <!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+        </table>
+        <a style="margin-top: 10px;margin-left: 250px;" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-th"></span> Calcular</a>
+        <a style="margin-top: 10px;margin-left: 10px;" href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Salvar</a>
+        <!--Após apertar Salvar o numero inserido em nota deve ir para a outra tabela para o bimestre escolhido ONDE CADA UM TEM SUA ID-->
+      </div>
+        
+        <!--2º GRAFICO: DE APROVEITAMENTO-->
+        
+         <table class="table-striped" style="height:200px;width:40%;float:right;margin-right: 150px;">
+            <tr>
+                <td colspan="5"><center><b>Nota e Aproveitamento</b></center></td>
+                
+            </tr>
+            <tr>
+                <td><center><img src="img/medal-512.png" width="30" height="30"></center></td>
+                <td><b>1º</b> Bimestre</td>
+                <td><b>2º</b> Bimestre</td>
+                <td><b>3º</b> Bimestre</td>
+                <td><b>4º</b> Bimestre</td>
+            </tr>
+            <tr>
+                <td><center><b>Notas</b></center></td>
+                <td id="artN1"><ul></ul></td><!---->
+                <td id="artN2"><ul></ul></td>
+                <td id="artN3"><ul></ul></td>
+                <td id="artN4"><ul></ul></td>
+            </tr>
+            <tr>
+                <td><center><b>Aproveitamento</b></center></td>
+                <td colspan="4" id="artpor100"><center></center></td>
+                <!--Nessa coluna deve conter em porcentagem o aproveitamento
+                    Vai ser tipo assim:
+                    -Se só tiver a nota do 1º bimestre,vai ser:
+                       n1*100/10
+                     -Se tiver a nota do 1º e 2º bimestre,vai ser:
+                       (n1+n2)*100/20
+                     -Se tiver a nota do 1º,2º e 3º bimestre,vai ser:
+                       (n1+n2+n3)*100/30
+                     -Se tiver a nota do 1º,2º,3º e 4º bimestre,vai ser:
+                       (n1+n2+n3+n4)*100/40
+                -->       
+            </tr>
+            <tr>
+                <td><center><b>Situação</b></center></td>
+                <td colspan="4" id="sitart"><center></center></td>
+                <!--Aqui o usuario tem três caminhos:-reprovado(se todas as notas estiverem completas 
+                e tiver - que 24 pontos);-aprovado(se já tiver 24 pontos) ou Não aprovado ainda(se tiver nota incompleta)-->
+            </tr>
+        </table>   
+        <br><br><br><br>
+    </section>
+    
+    <section id="ingles">
+        <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Inglês</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+         <br><br><br>
+        <!--TABELA BIMESTRAL-->
+      <div style="float:left;">
+        <table class="table-striped" style="margin-left:200px;width: 300px;height: 100px;">
+            <tr>
+                <td colspan="2"><center><img src="img/nota.png" width="30" height="30"> <b>Bimestre</b></center></td>
+            </tr>
+             <tr>
+                <td>Nota:</td>
+                <td id="nota"><center><input type="number" min="0" max="10"></center></td>
+            </tr>
+             <tr>
+                  <td>Qual Bimestre:</td>
+                <td><select name="biming">
+                        <option value="ing1">1º Bimestre</option><!--Esses valores de cada bimestre devem aparecer na segunda tabela-->
+                        <option value="ing2">2º Bimestre</option>
+                        <option value="ing3">3º Bimestre</option>
+                        <option value="ing4">4º Bimestre</option>
+                        </select></td>
+            </tr>
+             <tr>
+                 <td>Nota mínima pra<br> o próximo Bimestre:</td>
+                 <td id="Nmin">&nbsp;</td><!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+             <tr>
+                <td>Quanto falta para<br> passar de ano:</td>
+                <td id="falta">&nbsp;</td>  <!--Nessa td tem que aparecer o valor automaticamente após o usuario apertar calcular-->
+            </tr>
+        </table>
+        <a style="margin-top: 10px;margin-left: 250px;" href="#" class="btn btn-primary"><span class="glyphicon glyphicon-th"></span> Calcular</a>
+        <a style="margin-top: 10px;margin-left: 10px;" href="#" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> Salvar</a>
+        <!--Após apertar Salvar o numero inserido em nota deve ir para a outra tabela para o bimestre escolhido ONDE CADA UM TEM SUA ID-->
+      </div>
+        
+        <!--2º GRAFICO: DE APROVEITAMENTO-->
+        
+         <table class="table-striped" style="height:200px;width:40%;float:right;margin-right: 150px;">
+            <tr>
+                <td colspan="5"><center><b>Nota e Aproveitamento</b></center></td>
+                
+            </tr>
+            <tr>
+                <td><center><img src="img/medal-512.png" width="30" height="30"></center></td>
+                <td><b>1º</b> Bimestre</td>
+                <td><b>2º</b> Bimestre</td>
+                <td><b>3º</b> Bimestre</td>
+                <td><b>4º</b> Bimestre</td>
+            </tr>
+            <tr>
+                <td><center><b>Notas</b></center></td>
+                <td id="ingN1"><ul></ul></td><!---->
+                <td id="ingN2"><ul></ul></td>
+                <td id="ingN3"><ul></ul></td>
+                <td id="ingN4"><ul></ul></td>
+            </tr>
+            <tr>
+                <td><center><b>Aproveitamento</b></center></td>
+                <td colspan="4" id="ingpor100"><center></center></td>
+                <!--Nessa coluna deve conter em porcentagem o aproveitamento
+                    Vai ser tipo assim:
+                    -Se só tiver a nota do 1º bimestre,vai ser:
+                       n1*100/10
+                     -Se tiver a nota do 1º e 2º bimestre,vai ser:
+                       (n1+n2)*100/20
+                     -Se tiver a nota do 1º,2º e 3º bimestre,vai ser:
+                       (n1+n2+n3)*100/30
+                     -Se tiver a nota do 1º,2º,3º e 4º bimestre,vai ser:
+                       (n1+n2+n3+n4)*100/40
+                -->       
+            </tr>
+            <tr>
+                <td><center><b>Situação</b></center></td>
+                <td colspan="4" id="siting"><center></center></td>
+                <!--Aqui o usuario tem três caminhos:-reprovado(se todas as notas estiverem completas 
+                e tiver - que 24 pontos);-aprovado(se já tiver 24 pontos) ou Não aprovado ainda(se tiver nota incompleta)-->
+            </tr>
+        </table>   
+        <br><br><br><br>
+    </section>
+    <footer class="text-center" style="margin-top:150px;">
+   <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img src="img/l2l.png">
+                        <img src="img/logobrancal2l.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+</body>
+
+</html>
